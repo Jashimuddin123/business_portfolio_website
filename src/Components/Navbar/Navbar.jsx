@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* Services Dropdown */}
       <li
-        className="mr-2  font-semibold text-lg relative"
+        className="mr-2 font-semibold text-lg relative"
         onMouseEnter={() => setServicesDropdown(true)}
         onMouseLeave={() => setServicesDropdown(false)}
       >
@@ -32,29 +32,24 @@ const Navbar = () => {
           <ul className="absolute bg-gradient-to-r from-blue-500 to-cyan-500 text-white mt-10 w-56 rounded-lg z-10 shadow-lg">
             <li className="p-2">
               <NavLink to="/companyProfile" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-              Creative Design
+                Creative Design
               </NavLink>
             </li>
             <li className="p-2">
               <NavLink to="/management" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-              Graphics Design
+                Graphics Design
               </NavLink>
             </li>
             <li className="p-2">
               <NavLink to="/architech" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-              UI/UX Design
+                UI/UX Design
               </NavLink>
             </li>
             <li className="p-2">
               <NavLink to="/structure" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-              Motion Design
+                Motion Design
               </NavLink>
             </li>
-            {/* <li className="p-2">
-              <NavLink to="/constructionTeam" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Construction Team
-              </NavLink>
-            </li> */}
           </ul>
         )}
       </li>
@@ -64,11 +59,14 @@ const Navbar = () => {
           Case Studies
         </NavLink>
       </li>
+
+      {/* Blog Button */}
       <li className="mr-2 font-semibold text-lg">
         <NavLink to="/blog" className={({ isActive }) => isActive ? "text-red-500" : ""}>
           Blog
         </NavLink>
       </li>
+
       <li className="mr-2 font-semibold text-lg">
         <NavLink to="/contact" className={({ isActive }) => isActive ? "text-red-500" : ""}>
           Contact Us
@@ -106,8 +104,7 @@ const Navbar = () => {
   );
 
   return (
-    <div  className="navbar bg-gradient-to-r from-blue-700 to-cyan-500 py-4 text-white sticky top-0 z-50 shadow-md">
-
+    <div className="navbar bg-gradient-to-r from-blue-700 to-cyan-500 py-4 text-white sticky top-0 z-50 shadow-md">
       <div className="navbar-start">
         {/* Mobile Menu Toggle */}
         <div className="dropdown lg:hidden">
@@ -123,10 +120,7 @@ const Navbar = () => {
             </svg>
           </div>
           {/* Mobile Dropdown Menu */}
-          <ul
-            tabIndex={0}
-            className="absolute left-0 bg-white text-black w-56 p-2 rounded-lg shadow-lg mt-2"
-          >
+          <ul tabIndex={0} className="absolute left-0 bg-white text-black w-56 p-2 rounded-lg shadow-lg mt-2">
             {navLinks}
           </ul>
         </div>
