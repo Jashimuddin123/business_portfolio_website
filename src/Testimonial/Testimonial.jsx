@@ -24,8 +24,8 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 bg-gray-50">
-      <h2 className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+    <div className="max-w-7xl mx-auto px-4 py-10 bg-gray-50 mt-10">
+      <h2 className="text-4xl font-bold text-blue-900 mt-16 mb-12  text-center  ">
         What Our Clients Say
       </h2>
 

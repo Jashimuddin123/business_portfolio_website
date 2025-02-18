@@ -1,4 +1,6 @@
-import { GoArrowRight } from "react-icons/go";
+import { FaSearchDollar } from "react-icons/fa";
+import { GoArchive, GoArrowRight, GoCodeReview } from "react-icons/go";
+import { IoMdTransgender } from "react-icons/io";
 import { TfiWorld } from "react-icons/tfi";
 import { Link } from "react-router";
 
@@ -8,16 +10,16 @@ const Services = () => {
       {/* card 1 */}
       <div className="border-b-2 border-[#0084FF] px-2 py-2 md:px-8 md:py-12 hover:bg-[#0084FF] hover:text-white hover:border-white">
         <div className="flex items-center gap-2">
-          <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Creative Design</p>
+          <GoCodeReview className="text-2xl" />
+          <p className="text-blue-900 font-bold text-2xl">Creative Design</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/creativeDesign">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
-            <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
+            <GoArrowRight className="rounded-full  text-2xl px-1 border hover:text-white" />
           </button>
         </Link>
       </div>
@@ -27,30 +29,30 @@ const Services = () => {
       <div className="border-l-0 md:border-l-2 border-[#0084FF] hover:bg-[#0084FF] hover:text-white hover:border-white px-6 py-8 md:px-8 md:py-12 border-b-2">
         <div className="flex items-center gap-2">
           <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Website</p>
+          <p className="text-blue-900 font-bold text-2xl">Website</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/website">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
             <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
           </button>
         </Link>
       </div>
-      
+     
       {/* card 3 */}
       <div className="border-b-2 md:border-l-2  border-[#0084FF] px-6 py-2 md:px-8 md:py-12 hover:bg-[#0084FF] hover:text-white hover:border-white">
         <div className="flex items-center gap-2">
-          <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Software</p>
+          <IoMdTransgender className="text-2xl" />
+          <p className="text-blue-900 font-bold text-2xl">Software</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/software">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
             <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
           </button>
@@ -61,14 +63,14 @@ const Services = () => {
       {/* card 4 */}
       <div className="  border-[#0084FF] hover:bg-[#0084FF] hover:text-white hover:border-white px-6 py-8 md:px-8 md:py-12 ">
         <div className="flex items-center gap-2">
-          <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Digital Marketing</p>
+          <GoArchive className="text-2xl" />
+          <p className="text-blue-900 font-bold text-2xl">Digital Marketing</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/digitalMarketing">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
             <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
           </button>
@@ -77,14 +79,14 @@ const Services = () => {
       {/* card 5 */}
       <div className="md:border-l-2  border-[#0084FF] hover:bg-[#0084FF] hover:text-white hover:border-white px-6 py-8 md:px-8 md:py-12 ">
         <div className="flex items-center gap-2">
-          <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Website</p>
+          <FaSearchDollar className="text-2xl" />
+          <p className="text-blue-900 font-bold text-2xl">SEO</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/website">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
             <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
           </button>
@@ -94,13 +96,13 @@ const Services = () => {
       <div className="md:border-l-2  border-[#0084FF] hover:bg-[#0084FF] hover:text-white hover:border-white px-6 py-8 md:px-8 md:py-12 ">
         <div className="flex items-center gap-2">
           <TfiWorld className="text-2xl" />
-          <p className="text-blue-700 text-2xl">Website</p>
+          <p className="text-blue-900 font-bold text-2xl">Website</p>
         </div>
         <p className="py-4">
           Our website development expertise goes beyond coding from concept to execution, we sculpt digital experiences.
         </p>
         <Link to="/website">
-          <button className="mt-4 flex w-40 items-center gap-2 text-[#002A64] hover:text-white py-2 px-3 rounded-lg hover:border-white">
+          <button className="mt-4 flex w-40 items-center gap-2 font-semibold text-blue-950 hover:text-white py-2 px-3 rounded-lg hover:border-white">
             Explore All
             <GoArrowRight className="rounded-full text-2xl px-1 border hover:text-white" />
           </button>

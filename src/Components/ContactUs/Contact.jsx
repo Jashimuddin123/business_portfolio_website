@@ -22,11 +22,7 @@ const ContactUs = () => {
               <h3 className="text-2xl md:text-3xl font-semibold text-[#002A64]">
                 Ready to Bring Your Yours Ideas?
               </h3>
-              {/* <p>
-                Take the first step towards transforming your ideas into reality.
-                Collaborate with us to bring your creative vision to life through
-                expert guidance and cutting-edge solutions.
-              </p> */}
+             
               {/* icons div */}
               {/* WhatsApp Icon Section */}
               <div className="w-full flex items-center space-x-4 ">
