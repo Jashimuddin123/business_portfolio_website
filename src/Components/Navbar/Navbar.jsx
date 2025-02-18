@@ -1,140 +1,124 @@
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion"; 
 
 const Navbar = () => {
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Hide dropdowns on route change
   useEffect(() => {
     setServicesDropdown(false);
     setAboutDropdown(false);
+    setMenuOpen(false); 
   }, [location]);
+
+  const navbarBgColor = location.pathname === "/" ? "" : "bg-white";
 
   const navLinks = (
     <>
-      <li className="mr-2 font-semibold text-lg">
-        <NavLink to="/" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-          Home
-        </NavLink>
+      <li className="mr-2 text-[16px]">
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
       </li>
-
-      {/* Services Dropdown */}
       <li
-        className="mr-2 font-semibold text-lg relative"
+        className="mr-2 text-lg relative"
         onMouseEnter={() => setServicesDropdown(true)}
         onMouseLeave={() => setServicesDropdown(false)}
       >
-        <div className="cursor-pointer">Services</div>
+        <div className="cursor-pointer text-[16px]">
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        </div>
         {servicesDropdown && (
-          <ul className="absolute bg-gradient-to-r from-blue-500 to-cyan-500 text-white mt-10 w-56 rounded-lg z-10 shadow-lg">
-            <li className="p-2">
-              <NavLink to="/companyProfile" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Creative Design
-              </NavLink>
+          <ul className="absolute bg-[#DBF0FF] text-[#002A64] mt-10 w-56 rounded-lg z-10 shadow-lg">
+            <li className="p-2 text-[16px]">
+              <Link to="/creativeDesign" onClick={() => setMenuOpen(false)}>Creative Design</Link>
             </li>
-            <li className="p-2">
-              <NavLink to="/management" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Graphics Design
-              </NavLink>
+            <li className="p-2 text-[16px]">
+              <Link to="/software" onClick={() => setMenuOpen(false)}>Software</Link>
             </li>
-            <li className="p-2">
-              <NavLink to="/architech" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                UI/UX Design
-              </NavLink>
+            <li className="p-2 text-[16px]">
+              <Link to="/website" onClick={() => setMenuOpen(false)}>Website</Link>
             </li>
-            <li className="p-2">
-              <NavLink to="/structure" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Motion Design
-              </NavLink>
+            <li className="p-2 text-[16px]">
+              <Link to="/digitalMarketing" onClick={() => setMenuOpen(false)}>Digital Marketing</Link>
             </li>
           </ul>
         )}
       </li>
-
-      <li className="mr-2 font-semibold text-lg">
-        <NavLink to="/ourService" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-          Case Studies
-        </NavLink>
+      <li className="mr-2 text-[16px]">
+        <Link to="/caseStudies" onClick={() => setMenuOpen(false)}>Case Studies</Link>
       </li>
-
-      {/* Blog Button */}
-      <li className="mr-2 font-semibold text-lg">
-        <NavLink to="/blog" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-          Blog
-        </NavLink>
+      <li className="mr-2 text-[16px]">
+        <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
       </li>
-
-      <li className="mr-2 font-semibold text-lg">
-        <NavLink to="/contact" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-          Contact Us
-        </NavLink>
-      </li>
-
-      {/* About Dropdown */}
       <li
-        className="mr-2 font-semibold text-lg relative"
+        className="mr-2 text-[16px] relative"
         onMouseEnter={() => setAboutDropdown(true)}
         onMouseLeave={() => setAboutDropdown(false)}
       >
-        <div className="cursor-pointer">About</div>
+        <div className="cursor-pointer">
+          <Link to="/aboutUs" onClick={() => setMenuOpen(false)}>About</Link>
+        </div>
         {aboutDropdown && (
-          <ul className="absolute bg-sky-500 text-white mt-3 w-56 rounded-lg z-10 shadow-lg">
-            <li className="p-2">
-              <NavLink to="/companyProfile" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                About Us
-              </NavLink>
+          <ul className="absolute bg-[#DBF0FF] text-[#002A64] mt-10 w-56 rounded-lg z-10 shadow-lg">
+            <li className="p-2 text-[16px]">
+              <Link to="/aboutUs" onClick={() => setMenuOpen(false)}>About Us</Link>
             </li>
-            <li className="p-2">
-              <NavLink to="/management" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Career
-              </NavLink>
+            <li className="p-2 text-[16px]">
+              <Link to="/carrer" onClick={() => setMenuOpen(false)}>Career</Link>
             </li>
-            <li className="p-2">
-              <NavLink to="/architech" className={({ isActive }) => isActive ? "text-red-500" : ""}>
-                Life at Haque Digital
-              </NavLink>
+            <li className="p-2 text-[16px]">
+              <Link to="/architech" onClick={() => setMenuOpen(false)}>Life at Haque Digital</Link>
             </li>
           </ul>
         )}
+      </li>
+      <li className="mr-2 text-[16px]">
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-gradient-to-r from-blue-700 to-cyan-500 py-4 text-white sticky top-0 z-50 shadow-md">
-      <div className="navbar-start">
-        {/* Mobile Menu Toggle */}
-        <div className="dropdown lg:hidden">
-          <div tabIndex={0} role="button" className="btn btn-ghost">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          {/* Mobile Dropdown Menu */}
-          <ul tabIndex={0} className="absolute left-0 bg-white text-black w-56 p-2 rounded-lg shadow-lg mt-2">
-            {navLinks}
-          </ul>
+    <div className={`navbar text-[#002A64] py-4 bg-white sticky top-0 z-50 shadow-md ${navbarBgColor}`}>
+      <div className="flex items-center justify-between w-full px-4 lg:px-10">
+        <div className="flex-shrink-0">
+          <img className="w-40 mb-4 mt-4" src="https://i.ibb.co.com/ccBLKKQx/logo.png" alt="Logo" />
+        </div>
+        <div className="lg:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="btn btn-ghost">
+            {menuOpen ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            )}
+          </button>
         </div>
 
-        {/* Logo */}
-        <div className="ml-6">
-          <p className="text-3xl font-bold">Small Business</p>
+        <div className="hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
       </div>
 
-      {/* Desktop Navigation */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
-      </div>
+      <AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+      className="absolute top-full left-0 w-full bg-[#DBF0FF] text-black shadow-lg lg:hidden"
+    >
+      <ul className="p-4  ">{navLinks}</ul>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </div>
   );
 };
