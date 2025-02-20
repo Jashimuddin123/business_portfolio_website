@@ -17,8 +17,8 @@ const CaseStudies = () => {
           </h1>
           <p>
             We employed cutting-edge SEO strategies that helped our client,
-            Regina Divorce Lawyer, achieve a #1 ranking in search results,
-            leading to increased traffic and conversions.
+            Regina Divorce Lawyer, achieve a #1 ranking in esults,
+            
           </p>
           <Link
             to="/caseDetailsOne"
@@ -53,7 +53,7 @@ const CaseStudies = () => {
           <img
             src="https://i.ibb.co.com/pvvpDF0M/Whats-App-Image-2025-02-12-at-16-41-22-4a49573f.jpg"
             alt=""
-            className="w-full h-64 object-cover rounded-md"
+            className="w-full h-64 rounded-md"
           />
           <h1 className="text-xl font-bold mt-4">E-commerce Website Redesign</h1>
           <p>

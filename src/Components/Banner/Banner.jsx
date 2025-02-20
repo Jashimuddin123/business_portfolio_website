@@ -17,7 +17,7 @@ const Banner = () => {
         <SwiperSlide>
         <div
   className="w-full min-h-[650px] flex flex-col md:flex-row items-center justify-center 
-      bg-gradient-to-b from-blue-700 to-white text-white px-6 relative"
+      bg-gradient-to-b from-blue-600 to-white text-white px-6 relative"
 >
   {/* Left Section */}
   <div className="flex-1 mt-5 md:mt-0 px-2.5 md:px-10 flex flex-col justify-center items-start">
@@ -41,23 +41,28 @@ const Banner = () => {
       </button>
     </Link>
 
-    {/* Stats Section (Mobile) */}
-    <div className="flex flex-col md:hidden gap-6 w-full mt-5 ml-2.5">
-      <div className="grid grid-cols-3 gap-4 w-full">
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">1000K+</h2>
-          <p className="text-sm opacity-90">Leads Generated</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">500K+</h2>
-          <p className="text-sm opacity-90">Happy Clients</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">200K+</h2>
-          <p className="text-sm opacity-90">Projects Completed</p>
-        </div>
-      </div>
+   {/* Stats Section (Mobile) */}
+<div className="flex md:hidden w-full mt-5 ml-2.5 justify-center">
+  <div className="grid grid-cols-4 gap-4 w-full text-center">
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">990+</h2>
+      <p className="text-sm opacity-90">Projects</p>
     </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">500+</h2>
+      <p className="text-sm opacity-90">Clients</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Years</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Awards</p>
+    </div>
+  </div>
+</div>
+
   </div>
 
   {/* Right Section */}
@@ -70,18 +75,22 @@ const Banner = () => {
   </div>
 
   {/* Stats Section (Desktop) */}
-  <div className="hidden md:flex absolute bottom-6 right-6 gap-6 bg-opacity-20 p-6 rounded-lg">
+  <div className="hidden md:flex md:mr-60 absolute bottom-0 right-6 gap-20 bg-opacity-20 p-6 rounded-lg">
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">1000K+</h2>
-      <p className="text-lg opacity-90">Leads Generated</p>
+      <h2 className="text-3xl font-bold">990+</h2>
+      <p className="text-lg opacity-90">Projects Completed</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">500K+</h2>
+      <h2 className="text-3xl font-bold">500+</h2>
       <p className="text-lg opacity-90">Happy Clients</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">200K+</h2>
-      <p className="text-lg opacity-90">Projects Completed</p>
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Years of Experience</p>
+    </div>
+    <div className="text-center text-blue-800">
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Awards</p>
     </div>
   </div>
 </div>
@@ -91,7 +100,7 @@ const Banner = () => {
         <SwiperSlide>
         <div
   className="w-full min-h-[650px] flex flex-col md:flex-row items-center justify-center 
-      bg-gradient-to-b from-blue-700 to-white text-white px-6 relative"
+      bg-gradient-to-b from-blue-600 to-white text-white px-6 relative"
 >
   {/* Left Section */}
   <div className="flex-1 mt-5 md:mt-0 px-2.5 md:px-10 flex flex-col justify-center items-start">
@@ -115,47 +124,57 @@ const Banner = () => {
       </button>
     </Link>
 
-    {/* Stats Section (Mobile) */}
-    <div className="flex flex-col md:hidden gap-6 w-full mt-5 ml-2.5">
-      <div className="grid grid-cols-3 gap-4 w-full">
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">1000K+</h2>
-          <p className="text-sm opacity-90">Leads Generated</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">500K+</h2>
-          <p className="text-sm opacity-90">Happy Clients</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">200K+</h2>
-          <p className="text-sm opacity-90">Projects Completed</p>
-        </div>
-      </div>
+    
+   {/* Stats Section (Mobile) */}
+<div className="flex md:hidden w-full mt-5 ml-2.5 justify-center">
+  <div className="grid grid-cols-4 gap-4 w-full text-center">
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">990+</h2>
+      <p className="text-sm opacity-90">Projects</p>
     </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">500+</h2>
+      <p className="text-sm opacity-90">Clients</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Years</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Awards</p>
+    </div>
+  </div>
+</div>
+
   </div>
 
   {/* Right Section */}
   <div className="flex-1 flex justify-center items-center mt-6 md:mt-0">
     <img
-      src="https://i.ibb.co/m5YySSvH/Generating-new-leads-pana.png"
+      src="https://i.ibb.co.com/1f2ktzGm/Ecommerce-web-page-rafiki-1.png"
       alt="UI/UX Design"
       className="w-full md:w-[400px] h-auto max-h-[450px] object-contain drop-shadow-xl"
     />
   </div>
 
   {/* Stats Section (Desktop) */}
-  <div className="hidden md:flex absolute bottom-6 right-6 gap-6 bg-opacity-20 p-6 rounded-lg">
+  <div className="hidden md:flex  md:mr-60  absolute bottom-6 right-6 gap-20 bg-opacity-20 p-6 rounded-lg">
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">1000K+</h2>
-      <p className="text-lg opacity-90">Leads Generated</p>
+      <h2 className="text-3xl font-bold">990+</h2>
+      <p className="text-lg opacity-90">Projects Completed</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">500K+</h2>
+      <h2 className="text-3xl font-bold">500+</h2>
       <p className="text-lg opacity-90">Happy Clients</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">200K+</h2>
-      <p className="text-lg opacity-90">Projects Completed</p>
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Years of Experience</p>
+    </div>
+    <div className="text-center text-blue-800">
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Awards</p>
     </div>
   </div>
 </div>
@@ -165,7 +184,7 @@ const Banner = () => {
         <SwiperSlide>
         <div
   className="w-full min-h-[650px] flex flex-col md:flex-row items-center justify-center 
-      bg-gradient-to-b from-blue-700 to-white text-white px-6 relative"
+      bg-gradient-to-b from-blue-600 to-white text-white px-6 relative"
 >
   {/* Left Section */}
   <div className="flex-1 mt-5 md:mt-0 px-2.5 md:px-10 flex flex-col justify-center items-start">
@@ -189,47 +208,57 @@ const Banner = () => {
       </button>
     </Link>
 
+   
     {/* Stats Section (Mobile) */}
-    <div className="flex flex-col md:hidden gap-6 w-full mt-5 ml-2.5">
-      <div className="grid grid-cols-3 gap-4 w-full">
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">1000K+</h2>
-          <p className="text-sm opacity-90">Leads Generated</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">500K+</h2>
-          <p className="text-sm opacity-90">Happy Clients</p>
-        </div>
-        <div className="text-center text-blue-800">
-          <h2 className="text-xl font-bold">200K+</h2>
-          <p className="text-sm opacity-90">Projects Completed</p>
-        </div>
-      </div>
+<div className="flex md:hidden w-full mt-5 ml-2.5 justify-center">
+  <div className="grid grid-cols-4 gap-4 w-full text-center">
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">990+</h2>
+      <p className="text-sm opacity-90">Projects</p>
     </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">500+</h2>
+      <p className="text-sm opacity-90">Clients</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Years</p>
+    </div>
+    <div className="text-blue-800">
+      <h2 className="text-xl font-bold">5+</h2>
+      <p className="text-sm opacity-90">Awards</p>
+    </div>
+  </div>
+</div>
+
   </div>
 
   {/* Right Section */}
   <div className="flex-1 flex justify-center items-center mt-6 md:mt-0">
     <img
-      src="https://i.ibb.co/qMwzznVh/Development-pana.png"
+      src="https://i.ibb.co.com/vxvhXdRJ/Website-designer-pana.png"
       alt="web development"
       className="w-full md:w-[400px] h-auto max-h-[450px] object-contain drop-shadow-xl"
     />
   </div>
 
   {/* Stats Section (Desktop) */}
-  <div className="hidden md:flex absolute bottom-6 right-6 gap-6 bg-opacity-20 p-6 rounded-lg">
+  <div className="hidden md:flex md:mr-60 absolute bottom-6 right-6 gap-20 bg-opacity-20 p-6 rounded-lg">
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">1000K+</h2>
-      <p className="text-lg opacity-90">Leads Generated</p>
+      <h2 className="text-3xl font-bold">990+</h2>
+      <p className="text-lg opacity-90">Projects Completed</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">500K+</h2>
+      <h2 className="text-3xl font-bold">500+</h2>
       <p className="text-lg opacity-90">Happy Clients</p>
     </div>
     <div className="text-center text-blue-800">
-      <h2 className="text-3xl font-bold">200K+</h2>
-      <p className="text-lg opacity-90">Projects Completed</p>
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Years of Experience</p>
+    </div>
+    <div className="text-center text-blue-800">
+      <h2 className="text-3xl font-bold">5+</h2>
+      <p className="text-lg opacity-90">Awards</p>
     </div>
   </div>
 </div>

@@ -28,12 +28,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar py-2 bg-blue-700 sticky top-0 z-50">
+    <div className="navbar py-2 bg-blue-600 sticky top-0 z-50">
       <div className="flex items-center justify-between w-full px-4 lg:px-10">
         {/* Logo */}
         <Link to="/">
           <div className="flex-shrink-0">
-            <img className="w-40 mb-4 mt-4" src="https://i.ibb.co/ccBLKKQx/logo.png" alt="Logo" />
+            <img className="w-40" src="https://i.ibb.co/ccBLKKQx/logo.png" alt="Logo" />
           </div>
         </Link>
 
@@ -55,10 +55,11 @@ const Navbar = () => {
             <Link to="/aboutUs" className="text-white text-[16px]">About</Link>
             <div className="absolute hidden group-hover:block bg-blue-100 p-4 text-black  w-56 rounded-lg shadow-lg">
               <Link to="/aboutUs" className="block p-2">About Us</Link>
-              <Link to="/career" className="block p-2">Career</Link>
-              <Link to="/architecture" className="block p-2">Life at Haque Digital</Link>
+              <Link to="/carrer" className="block p-2">Career</Link>
+              <Link to="/lifeAtHaqueDigital" className="block p-2">Life at Haque Digital</Link>
             </div>
           </div>
+          <Link to="/contact" className="text-white text-[16px]">Contact</Link>
         </div>
 
         {/* Desktop Contact Button */}
@@ -118,6 +119,7 @@ const Navbar = () => {
 
               <li><Link to="/caseStudies" onClick={() => setMenuOpen(false)}>Case Studies</Link></li>
               <li><Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link></li>
+              <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
 
               <li>
                 <button
@@ -137,7 +139,7 @@ const Navbar = () => {
                     >
                       <li><Link to="/aboutUs" onClick={() => setMenuOpen(false)}>About Us</Link></li>
                       <li><Link to="/career" onClick={() => setMenuOpen(false)}>Career</Link></li>
-                      <li><Link to="/architecture" onClick={() => setMenuOpen(false)}>Life at Haque Digital</Link></li>
+                      <li><Link to="/lifeAtHaqueDigital" onClick={() => setMenuOpen(false)}>Life at Haque Digital</Link></li>
                     </motion.ul>
                   )}
                 </AnimatePresence>

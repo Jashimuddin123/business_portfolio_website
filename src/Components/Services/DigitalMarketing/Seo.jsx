@@ -114,7 +114,7 @@ const Seo = () => {
         How Do We Work for SEO?
       </h1>
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
+        <div className="flex flex-wrap justify-center gap-8 mb-6">
           {sections.map((section, index) => (
             <button
               key={index}
@@ -125,7 +125,7 @@ const Seo = () => {
             </button>
           ))}
         </div>
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col gap-8 space-y-6">
           {sections.map((section, index) => (
             <div key={index}>
               {activeSection === index && (
@@ -136,9 +136,10 @@ const Seo = () => {
                   </div>
                   <div className="lg:w-1/2 mt-4 lg:mt-0">
                     <img
+                  
                       src={section.imageUrl}
                       alt={section.title}
-                      className="w-full h-auto rounded-lg shadow-md"
+                      className="w-full h-96   ml-10 rounded-lg shadow-md"
                     />
                   </div>
                 </div>

@@ -136,23 +136,22 @@ const ContactUs = () => {
   
           {/* Map Section */}
           <div className="overflow-hidden border border-gray-300 rounded-lg shadow-md">
-            <iframe
-              title="Contact Map - Pabna, Bangladesh"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.3583914854285!2d89.22178641529418!3d24.006962484280885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbf0f5b5d9137b%3A0x1e3587ef967fc87f!2sPabna%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1631667652495"
-              width="100%"
-              height="400"
-              allowFullScreen=""
-              loading="lazy"
-              className="border-none rounded-lg"
-            ></iframe>
-          </div>
+  <iframe
+    title="Contact Map - Habib Tower, Maijdee Bazar, Noakhali"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.3583914854285!2d89.22178641529418!3d24.006962484280885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547f9f7d1234cd%3A0xabcdef1234567890!2sHabib%20Tower%2C%20Maijdee%20Bazar%2C%20Noakhali!5e0!3m2!1sen!2sbd!4v1700000000000"
+    width="100%"
+    height="400"
+    allowFullScreen=""
+    loading="lazy"
+    className="border-none rounded-lg"
+  ></iframe>
+</div>
+
         </div>
       </div>
     </div>
-    {/* email .js  */}
-    <div>
- 
-    </div>
+
+   
 </div>
   );
 };

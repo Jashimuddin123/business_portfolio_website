@@ -32,6 +32,7 @@ import SearchEngine from "./Components/Services/DigitalMarketing/SearchEngine";
 import CaseStudies from "./Components/CaseStudies/CaseStudies";
 import WebDesign from "./Components/Services/Website/WebDesign";
 import Carrer from "./Components/About/Carrer";
+import LifeAtHaqueDiital from "./Components/About/LifeAtHaqueDiital";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         <Route path="/digitalMarketing" element={<DigitalMarketing />} /> 
         <Route path="/aboutUs" element={<AboutUs />} />  
         <Route path="/carrer" element={<Carrer />} />  
+        <Route path="/lifeAtHaqueDigital" element={<LifeAtHaqueDiital />} />  
        
       </Route>
     </Routes>

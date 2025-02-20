@@ -45,15 +45,15 @@ const Testimonial = () => {
       >
         {clients.map((client, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
+            <div className="bg-blue-100 p-6 rounded-xl shadow-lg text-center">
               <img
                 src={client.image}
                 alt={client.title}
-                className="w-20 h-20 mx-auto rounded-full border-4 border-blue-500"
+                className="w-28 h-28 mx-auto rounded-full "
               />
               <h3 className="text-lg font-semibold text-gray-800 mt-4">{client.title}</h3>
               <div className="flex justify-center mt-2">{renderStars(client.rating)}</div>
-              <p className="mt-2 text-gray-600 italic text-sm">{client.description}</p>
+              <p className="mt-2 text-gray-600  text-sm">{client.description}</p>
             </div>
           </SwiperSlide>
         ))}

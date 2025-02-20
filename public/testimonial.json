@@ -1,39 +1,38 @@
 [
-    {
-      "image": "https://i.ibb.co.com/yByQnWTT/blog5.jpg",
-      "title": "John Doe",
-      "rating": 5,
-      "description": "Their service was outstanding! I was amazed by the professionalism and quality of work delivered."
-    },
-    {
-      "image": "https://i.ibb.co.com/Jw4sfyrC/blog13.jpg",
-      "title": "Jane Smith",
-      "rating": 4.5,
-      "description": "An excellent experience from start to finish. Highly recommended for their expertise and dedication."
-    },
-    {
-      "image": "https://i.ibb.co.com/rKwWRhwN/blog16.png",
-      "title": "Michael Brown",
-      "rating": 4,
-      "description": "Super professional team! They understood my requirements and delivered beyond expectations."
-    },
-    {
-      "image": "https://i.ibb.co.com/yByQnWTT/blog5.jpg",
-      "title": "John Doe",
-      "rating": 5,
-      "description": "Their service was outstanding! I was amazed by the professionalism and quality of work delivered."
-    },
-    {
-      "image": "https://i.ibb.co.com/Jw4sfyrC/blog13.jpg",
-      "title": "Jane Smith",
-      "rating": 4.5,
-      "description": "An excellent experience from start to finish. Highly recommended for their expertise and dedication."
-    },
-    {
-      "image": "https://i.ibb.co.com/rKwWRhwN/blog16.png",
-      "title": "Michael Brown",
-      "rating": 4,
-      "description": "Super professional team! They understood my requirements and delivered beyond expectations."
-    }
-  ]
-  
+  {
+    "image": "https://i.ibb.co.com/673jYx0F/Image-Detail-78e84eac-dcb9-4355-b0a1-9dbe87dba532-Gallery.jpg",
+    "title": "David Thompson",
+    "rating": 5,
+    "description": "Exceptional service! The team's professionalism and attention to detail exceeded my expectations. Highly recommended!"
+  },
+  {
+    "image": "https://i.ibb.co.com/Jw4sfyrC/blog13.jpg",
+    "title": "Sophia Martinez",
+    "rating": 4.5,
+    "description": "A seamless experience from start to finish. Their expertise and dedication were truly impressive.They are very affortable "
+  },
+  {
+    "image": "https://i.ibb.co.com/dw6t5Rnm/50087.jpg",
+    "title": "William Anderson",
+    "rating": 4,
+    "description": "The team was professional, responsive, and committed to delivering outstanding results. Would definitely work with them again!"
+  },
+  {
+    "image": "https://i.ibb.co.com/99K8Z3jx/stock-photo-a-close-up-portrait-of-young-happy-cheerful-young-man-in-checkered-shirt-in-front-of-gra.jpg",
+    "title": "Emily Johnson",
+    "rating": 5,
+    "description": "Top-tier service! Their attention to detail and commitment to quality made all the difference. Truly outstanding!"
+  },
+  {
+    "image": "https://i.ibb.co.com/MyDB0Yqc/CDT-headshot-1024x1024.jpg",
+    "title": "Christopher Wilson",
+    "rating": 4.5,
+    "description": "An amazing team with great expertise. They delivered beyond my expectations. Highly professional and efficient."
+  },
+  {
+    "image": "https://i.ibb.co.com/9m5XrSNB/5998.jpg",
+    "title": "Olivia Carter",
+    "rating": 4,
+    "description": "Great service with a personal touch! Their approach was thorough, and the results spoke for themselves.Its was very professinal experience"
+  }
+]
